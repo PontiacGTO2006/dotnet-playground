@@ -5,4 +5,5 @@ namespace WebAPI.Entities
         public int ID { get; set; }
         public string UserName { get; set; }
     }
+   
 }

@@ -5,7 +5,7 @@ using WebAPI.Entities;
 namespace WebAPI.Controllers
 {
     [ApiController]
-    [Microsoft.AspNetCore.Components.Route("api/[controller]")] // /WebApi/users
+    [Route("webapi/[controller]")] // /WebApi/users
     public class UsersController : ControllerBase
     {
         private readonly DataContext _context;
@@ -20,11 +20,11 @@ namespace WebAPI.Controllers
             var users = _context.Users.ToList();
             return users;
         }
-
+ 
         [HttpGet("{id}")]
-        public ActionResult<AppUser> GetUser(int id)
+        public ActionResult<AppUser> GetUser(int ID)
         {
-            return _context.Users.Find(id);
+            return _context.Users.Find(ID);
         }
     }
 }
