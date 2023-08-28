@@ -7,7 +7,7 @@ namespace WebAPI.Controllers
 {
     [ApiController]
     [Route("webapi/[controller]")] // /WebApi/users
-    public class UsersController : ControllerBase
+    public class UsersController : BaseAPIController
     {
         private readonly DataContext _context;
         public UsersController(DataContext context)
