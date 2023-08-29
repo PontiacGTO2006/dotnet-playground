@@ -2,6 +2,8 @@ using WebAPI.Data;
 using Microsoft.AspNetCore.Mvc;
 using WebAPI.Entities;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
+
 
 namespace WebAPI.Controllers
 {
@@ -22,6 +24,7 @@ namespace WebAPI.Controllers
             return users;
         }
  
+        [Authorize]
         [HttpGet("{id}")]
         public async Task<ActionResult<AppUser>> GetUser(int Id)
         {
