@@ -10,6 +10,7 @@ export class AccountService {
   baseUrl = 'http://localhost:5203/webapi/';
   private currentUserSource = new BehaviorSubject<User|null>(null);
   currentUser$ = this.currentUserSource.asObservable();
+  static currentUser$: any;
 
   constructor(private http: HttpClient) { }
 
