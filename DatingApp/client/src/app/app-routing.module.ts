@@ -19,6 +19,7 @@ const routes: Routes = [
       {path: 'messages', component: MessagesComponent},
     ]
   },
+  {path: 'errors', component: TestErrorComponent},
 
   {path: '**', component: HomeComponent, pathMatch: 'full'},
 ];
