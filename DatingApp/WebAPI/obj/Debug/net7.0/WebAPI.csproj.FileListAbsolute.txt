@@ -75,3 +75,4 @@ C:\Users\car-m\My Drive\Documents\GitHub\dotnet-playground\DatingApp\WebAPI\bin\
 C:\Users\car-m\My Drive\Documents\GitHub\dotnet-playground\DatingApp\WebAPI\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\car-m\My Drive\Documents\GitHub\dotnet-playground\DatingApp\WebAPI\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
 C:\Users\car-m\My Drive\Documents\GitHub\dotnet-playground\DatingApp\WebAPI\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\car-m\My Drive\Documents\GitHub\dotnet-playground\DatingApp\WebAPI\bin\Debug\net7.0\Data\UserSeedData.json
