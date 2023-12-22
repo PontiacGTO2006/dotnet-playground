@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using WebAPI.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Authorization;
-
+using WebAPI.Interfaces;
 
 namespace WebAPI.Controllers
 {
@@ -11,10 +11,10 @@ namespace WebAPI.Controllers
     [Route("webapi/[controller]")] // /WebApi/users
     public class UsersController : BaseAPIController
     {
-        private readonly DataContext _context;
-        public UsersController(DataContext context)
+        private readonly IUserRepository _userRepository;
+        public UsersController(IUserRepository userRepository)
         {
-            _context = context;
+            
         }
 
         [HttpGet]
